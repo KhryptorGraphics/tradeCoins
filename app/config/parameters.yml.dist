@@ -4,7 +4,7 @@
 parameters:
     database_user: root
     database_password: root
-    database_path: trade_your_goods.sqlite
+    database_path: %kernel.root_dir%/db/trade_your_goods.sqlite
 
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
@@ -16,3 +16,6 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    # Password salt
+    password_salt: salt

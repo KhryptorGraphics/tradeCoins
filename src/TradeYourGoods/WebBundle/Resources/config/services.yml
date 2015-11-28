@@ -1,4 +1,4 @@
 services:
-#    trade_your_goods_web.example:
-#        class: TradeYourGoods\WebBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    password_encryptor:
+        class: TradeYourGoods\WebBundle\Service\PasswordEncryptor
+        arguments: [%password_salt%]
