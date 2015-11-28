@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Users
  *
- * @ORM\Table(name="users")
+ * @ORM\Table(name="Users")
  * @ORM\Entity
  */
 class Users
@@ -24,21 +24,28 @@ class Users
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, nullable=true)
+     * @ORM\Column(name="name", type="text", nullable=true)
      */
     private $name;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="mobile", type="string", length=20, nullable=false)
+     * @ORM\Column(name="lastname", type="text", nullable=true)
+     */
+    private $lastname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mobile", type="text", nullable=false)
      */
     private $mobile;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="password", type="string", length=32, nullable=false)
+     * @ORM\Column(name="password", type="text", nullable=false)
      */
     private $password;
 
@@ -47,7 +54,7 @@ class Users
      *
      * @ORM\Column(name="credit", type="integer", nullable=true)
      */
-    private $credit = '50';
+    private $credit = 50;
 
 
 
@@ -83,6 +90,30 @@ class Users
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Set lastname
+     *
+     * @param string $lastname
+     *
+     * @return Users
+     */
+    public function setLastname($lastname)
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    /**
+     * Get lastname
+     *
+     * @return string
+     */
+    public function getLastname()
+    {
+        return $this->lastname;
     }
 
     /**
