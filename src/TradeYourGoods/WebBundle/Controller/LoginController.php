@@ -38,7 +38,7 @@ class LoginController extends Controller
         }
 
         } catch (\Exception $e) {
-            echo $e->getMessage();
+            var_dump($e->getTrace());
         }
         return $this->render('TradeYourGoodsWebBundle:Login:index.html.php', array('error' => 'true'));
     }
