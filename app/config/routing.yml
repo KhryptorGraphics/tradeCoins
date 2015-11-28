@@ -1,0 +1,7 @@
+trade_your_goods_web:
+    resource: "@TradeYourGoodsWebBundle/Resources/config/routing.yml"
+    prefix:   /
+
+trade_your_goods_rest:
+    resource: "@TradeYourGoodsRestBundle/Resources/config/routing.yml"
+    prefix:   /

@@ -1,0 +1,4 @@
+services:
+#    trade_your_goods_rest.example:
+#        class: TradeYourGoods\RestBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
