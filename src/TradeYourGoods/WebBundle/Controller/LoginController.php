@@ -25,7 +25,7 @@ class LoginController extends Controller
         $mobile = $request->request->get('mobile');
         $user = $this->getUserByMobile($mobile);
         if (!$user instanceof Users) {
-            return $this->render('TradeYourGoodsWebBundle:Login:register.html.php', array());
+            return $this->render('TradeYourGoodsWebBundle:Login:register.html.php', array('mobile' => $mobile));
         }
 
         // Check password
