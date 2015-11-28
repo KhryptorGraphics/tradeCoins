@@ -1,3 +1,8 @@
 trade_your_goods_web_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: TradeYourGoodsWebBundle:Default:index }
+    path:     /
+    defaults: { _controller: TradeYourGoodsWebBundle:Login:index }
+
+trade_your_goods_login:
+    path:     /login
+    defaults: { _controller: TradeYourGoodsWebBundle:Login:check }
+

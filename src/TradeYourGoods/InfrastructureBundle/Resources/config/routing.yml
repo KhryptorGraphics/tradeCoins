@@ -1,0 +1,3 @@
+trade_your_goods_infrastructure_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: TradeYourGoodsInfrastructureBundle:Default:index }
