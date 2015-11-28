@@ -17,7 +17,7 @@ class LoginController extends Controller
         $correct = true;
 
         if ($correct) {
-            return $this->render('TradeYourGoodsWebBundle:Login:homepage.html.php', array());
+            return $this->render('TradeYourGoodsWebBundle::homepage.html.php', array());
         } else {
             return $this->render('TradeYourGoodsWebBundle:Login:register.html.php', array());
         }
