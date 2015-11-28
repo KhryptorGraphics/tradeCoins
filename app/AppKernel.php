@@ -28,11 +28,18 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
 
+        $this->init();
         return $bundles;
     }
 
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
         $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+    }
+    
+    public function init()
+    {
+        date_default_timezone_set( 'Europe/Paris' );
+        parent::init();
     }
 }
