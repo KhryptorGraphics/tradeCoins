@@ -17,6 +17,7 @@ class LoginController extends Controller
 
     public function checkAction(Request $request)
     {
+        try {
         if (!$request->request->has('mobile')) {
             return $this->render('TradeYourGoodsWebBundle:Login:index.html.php', array('error' => 'true'));
         }
@@ -36,6 +37,9 @@ class LoginController extends Controller
             return $this->render('TradeYourGoodsWebBundle::homepage.html.php', array());
         }
 
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+        }
         return $this->render('TradeYourGoodsWebBundle:Login:index.html.php', array('error' => 'true'));
     }
 
