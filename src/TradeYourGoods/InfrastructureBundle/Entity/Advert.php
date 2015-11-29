@@ -28,6 +28,41 @@ class Advert
      */
     private $userId;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="text", nullable=false)
+     */
+    private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="quantity", type="text", nullable=true)
+     */
+    private $quantity;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="price", type="integer", nullable=false)
+     */
+    private $price;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text", nullable=true)
+     */
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="item", type="text", nullable=false)
+     */
+    private $item;
+
 
 
     /**
@@ -62,5 +97,125 @@ class Advert
     public function getUserId()
     {
         return $this->userId;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return Advert
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set quantity
+     *
+     * @param string $quantity
+     *
+     * @return Advert
+     */
+    public function setQuantity($quantity)
+    {
+        $this->quantity = $quantity;
+
+        return $this;
+    }
+
+    /**
+     * Get quantity
+     *
+     * @return string
+     */
+    public function getQuantity()
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * Set price
+     *
+     * @param integer $price
+     *
+     * @return Advert
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    /**
+     * Get price
+     *
+     * @return integer
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Advert
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set item
+     *
+     * @param string $item
+     *
+     * @return Advert
+     */
+    public function setItem($item)
+    {
+        $this->item = $item;
+
+        return $this;
+    }
+
+    /**
+     * Get item
+     *
+     * @return string
+     */
+    public function getItem()
+    {
+        return $this->item;
     }
 }

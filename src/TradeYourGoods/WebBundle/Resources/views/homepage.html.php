@@ -1,9 +1,3 @@
-<?php
-    echo $mobile;
-    
-    // echo $ads;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,51 +36,28 @@
           </button>
           <a class="navbar-brand" href="#">Project name</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <div class="navbar-right">
-            <a class="btn btn-default" href="login.html" role="button">Log in</a>
-            <a class="btn btn-default" href="register.html" role="button">Register</a>
-          </div>
-        </div><!--/.navbar-collapse -->
+
       </div>
     </nav>
 
     <div class="container">
-      <div class="media" style="margin-top: 50px;">
-        <div class="media-body">
-          <a href="#"><h4 class="media-heading">Media heading</h4></a>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+        <?php
+        foreach ($ads as $ad) {
+        ?>
+
+        <div class="media" style="margin-top: 50px;">
+          <div class="media-body">
+            <a href="#"><h4 class="media-heading"><?php echo $ad->getTitle();?> </h4></a>
+            <?php echo $ad->getDescription();?>
+          </div>
         </div>
-      </div>
-      <div class="media">
-        <div class="media-body">
-          <a href="#"><h4 class="media-heading">Media heading</h4></a>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </div>
-      <div class="media">
-        <div class="media-body">
-          <a href="#"><h4 class="media-heading">Media heading</h4></a>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </div>
-      <div class="media">
-        <div class="media-body">
-          <a href="#"><h4 class="media-heading">Media heading</h4></a>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </div>
-      <div class="media">
-        <div class="media-body">
-          <a href="#"><h4 class="media-heading">Media heading</h4></a>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </div>
+
+        <?php
+        }
+        ?>
       <hr>
 
-      <footer>
-        <p>&copy; 2015 Company, Inc.</p>
-      </footer>
     </div> <!-- /container -->
 
 
