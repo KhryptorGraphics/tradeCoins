@@ -38,20 +38,23 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-top:opx;margin-bottom:20px;">
+      <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">TradeYourGoods</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="homepage.html">
+			<img src="logo.png" alt="logo" height="auto" width="170px">
+		  </a>
         </div>
         <div class="navbar-right">
-            <a class="btn btn-default" href="profile.html" role="button">My Profile</a>
-            <a class="btn btn-default" href="newad.html" role="button">New Ad</a>
+			<a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
+			
+			<a class="btn btn-default" href="newad.html" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
         </div><!--/.navbar-right -->
       </div>
     </nav>
