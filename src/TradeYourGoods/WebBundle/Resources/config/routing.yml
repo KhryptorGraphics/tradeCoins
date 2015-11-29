@@ -19,4 +19,10 @@ trade_your_goods_register:
 trade_your_goods_homepage:
     path:     /homepage
     defaults:
-        _controller: TradeYourGoodsWebBundle:Homepage:index 
+        _controller: TradeYourGoodsWebBundle:Homepage:index
+
+trade_your_goods_advert:
+    path:     /advert
+    defaults:
+        _controller: TradeYourGoodsWebBundle:Advert:index
+

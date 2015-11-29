@@ -48,7 +48,12 @@ class Users
      * @ORM\Column(name="password", type="text", nullable=false)
      */
     private $password;
-    
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="text", nullable=false)
+     */
     private $email;
 
     public function getEmail() {

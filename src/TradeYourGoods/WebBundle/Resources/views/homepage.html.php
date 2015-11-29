@@ -55,7 +55,7 @@
 
         <div class="media" style="margin-top: 50px;">
           <div class="media-body">
-            <a href="#"><h4 class="media-heading"><?php echo $ad->getTitle();?> </h4></a>
+            <a href="<?php echo "/advert?adId=" . $ad->getId();?>"><h4 class="media-heading"><?php echo $ad->getTitle();?> </h4></a>
             <?php echo $ad->getDescription();?>
           </div>
         </div>
