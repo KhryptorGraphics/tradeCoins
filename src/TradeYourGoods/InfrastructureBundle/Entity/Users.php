@@ -48,7 +48,19 @@ class Users
      * @ORM\Column(name="password", type="text", nullable=false)
      */
     private $password;
+    
+    private $email;
 
+    public function getEmail() {
+        return $this->email;
+    }
+    
+    public function setEmail($email)
+    {
+        $this->mail = $email;
+
+        return $this;
+    }
     /**
      * @var integer
      *

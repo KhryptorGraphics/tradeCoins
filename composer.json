@@ -18,8 +18,7 @@
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sensio/generator-bundle": "~2.3",
-        "symfony/phpunit-bridge": "~2.7"
+        "ext-pdo_sqlite": "*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",

@@ -17,6 +17,7 @@ class LoginController extends Controller
 
     public function checkAction(Request $request)
     {
+        try {
         if (!$request->request->has('mobile')) {
             return $this->render('TradeYourGoodsWebBundle:Login:index.html.php', array('error' => 'true'));
         }
@@ -33,9 +34,12 @@ class LoginController extends Controller
         $correct = $this->checkPassword($user, $password);
 
         if ($correct) {
-            return $this->render('TradeYourGoodsWebBundle::homepage.html.php', array());
+            return $this->redirectToRoute('trade_your_goods_homepage', array('mobile' => $mobile));
         }
 
+        } catch (\Exception $e) {
+            var_dump($e->getTrace());
+        }
         return $this->render('TradeYourGoodsWebBundle:Login:index.html.php', array('error' => 'true'));
     }
 
