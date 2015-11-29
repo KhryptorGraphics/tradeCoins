@@ -54,15 +54,16 @@
         <div class="navbar-right">
 			<a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
 			
-			<a class="btn btn-default" href="newad.html" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
+			<a class="btn btn-default" href="/new_advert?mobile=<?php echo $_GET['mobile'] ?>" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
         </div><!--/.navbar-right -->
       </div>
     </nav>
     <div class="container">
-        <form class="form-signin" action="/newadvert">
+        <form class="form-signin" action="/create_advert" method = "POST">
             <h2 class="form-signin-heading">New Ad</h2>
             <h5>Title</h5>
             <label for="text" class="sr-only">Ad Title</label>
+            <input type ="hidden" name ="mobile" value ="<?php echo $_GET['mobile'] ?>" >
             <input type="text" id="title" name="title" class="form-control" placeholder="Ad Title" required autofocus>
             <br/>
             <h5>Item sold</h5>
