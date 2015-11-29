@@ -25,4 +25,17 @@ trade_your_goods_advert:
     path:     /advert
     defaults:
         _controller: TradeYourGoodsWebBundle:Advert:index
+        
+trade_your_goods_create_advert:
+    path:     /create_advert
+    defaults:
+        _controller: TradeYourGoodsWebBundle:Advert:create
+        
+trade_your_goods_new_advert:
+    path:     /new_advert
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    'TradeYourGoodsWebBundle:Advert:newadvert.html.php'
+        
+
 
