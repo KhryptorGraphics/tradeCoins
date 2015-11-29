@@ -19,16 +19,12 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Profile Info</title>
+    <title>Advert Info</title>
 
     <!-- Bootstrap core CSS -->
     <!--<link href="public/css/bootstrap.min.css" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/css/signin.css') ?>">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-     <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,14 +44,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="homepage.html">
-			<img src="logo.png" alt="logo" height="auto" width="170px">
-		  </a>
+        <a class="navbar-brand" href="homepage.html">
+            <img src="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/img/logo.png') ?>" alt="logo" height="auto" width="170px">
+        </a>
         </div>
         <div class="navbar-right">
-			<a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
-			
-			<a class="btn btn-default" href="newad.html" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
+            <a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
+            <a class="btn btn-default" href="newad.html" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
         </div><!--/.navbar-right -->
       </div>
     </nav>
@@ -65,48 +60,46 @@
 	  <div class="row">
                 <!-- edit form column -->
                 <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-                    <h3>Advert info</h3>
-                    <form class="form-horizontal" role="form">
-			<div class="form-group">
-                            <label class="col-lg-3 control-label">Seller name:</label>
-                            <div class="col-lg-8">
-                                <p>nome</p>
-                            </div>
-			</div>
-			<div class="form-group">
-                            <label class="col-lg-3 control-label">Seller last name:</label>
-                            <div class="col-lg-8">
-                                <p>cognome</p>
-                            </div>
-			</div>
-			<div class="form-group">
-                            <label class="col-lg-3 control-label">Seller Email:</label>
-                            <div class="col-lg-8">
-                                <p>email</p>
-                            </div>
-			</div>
-			<div class="form-group">
-                            <label class="col-md-3 control-label">Seller Telephone number:</label>
-                            <div class="col-md-8">
-                                <p>number</p>
-                            </div>
-			</div>
-			<div class="form-group">
-                            <label class="col-md-3 control-label">Product description</label>
-                            <div class="col-md-8">
-                                <p>description</p>
-                            </div>
-			</div>
-			<div class="form-group">
-                            <label class="col-md-3 control-label" style="font-size:20px">Prize:</label>
-                            <div class="col-md-8">
-                                <p style="font-size:20px">credit</p>
-                            </div>
-			</div>
-			<br/>
-			<button class="btn btn-lg btn-primary btn-block" type="submit" style = "background-color:green; width:200px; margin-left:450px;">BUY</button>
-		  </form>
-		</div>
+                  <h3>Personal info</h3>
+                  <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                          <label class="col-lg-3 control-label">First name:</label>
+                          <div class="col-lg-3 control-label">
+                                <input class="form-control" value="First name" type="text" disabled>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-lg-3 control-label">Last name:</label>
+                          <div class="col-lg-3 control-label">
+                                <input class="form-control" value="Last name" type="text" disabled>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-lg-3 control-label">Email:</label>
+                          <div class="col-lg-3 control-label">
+                                <input class="form-control" value="Email" type="text" disabled>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-md-3 control-label">Telephone number:</label>
+                          <div class="col-md-3 control-label">
+                                <input class="form-control" value="Telephone number" type="text" disabled>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-md-3 control-label">Password:</label>
+                          <div class="col-md-3 control-label">
+                                <input class="form-control" value="Password" type="password" disabled>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-md-3 control-label">Credit:</label>
+                          <div class="col-md-3 control-label">
+                                <input class="form-control" value="Credit" type="text" disabled>
+                          </div>
+                        </div>
+                  </form>
+                </div>
 	  </div>
 	</div>
 </body>

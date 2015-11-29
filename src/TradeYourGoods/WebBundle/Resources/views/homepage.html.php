@@ -13,7 +13,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Homepage</title>
 
     <!-- Bootstrap core CSS -->
     <!--<link href="public/css/bootstrap.min.css" rel="stylesheet">-->
@@ -38,14 +38,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="homepage.html">
-			<img src="logo.png" alt="logo" height="auto" width="170px">
-		  </a>
+        <a class="navbar-brand" href="homepage.html">
+            <img src="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/img/logo.png') ?>" alt="logo" height="auto" width="170px">
+        </a>
         </div>
         <div class="navbar-right">
-			<a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
+            <a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
 			
-			<a class="btn btn-default" href="newad.html" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
+            <a class="btn btn-default" href="newad.html" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
         </div><!--/.navbar-right -->
       </div>
     </nav>
