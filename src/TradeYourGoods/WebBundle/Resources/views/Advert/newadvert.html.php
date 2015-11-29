@@ -51,11 +51,13 @@
 			<img src="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/img/logo.png') ?>" alt="logo" height="auto" width="170px">
 		  </a>
         </div>
+          <div id="navbar" class="navbar-collapse collapse" >
         <div class="navbar-right">
 			<a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
-			
+
 			<a class="btn btn-default" href="/new_advert?mobile=<?php echo $_GET['mobile'] ?>" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
         </div><!--/.navbar-right -->
+        </div>
       </div>
     </nav>
     <div class="container">
@@ -77,6 +79,7 @@
             <h5>Total price</h5>
             <label for="text" class="sr-only">Price</label>
             <input type="number" id="price" name="price" class="form-control" placeholder="Price" required autofocus>
+            <a class="btn btn-default" id="confrontButton" href="/price_guide">Compare</a>
             <br/>
             <h5>Type the description of your ad</h5>
             <textarea name="description" cols="40" rows="6" placeholder="Description" class="form-control"></textarea>
@@ -85,4 +88,9 @@
         </form>
     </div> <!-- /container -->
   </body>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/js/bootstrap.min.js') ?>"></script>
 </html>

@@ -15,14 +15,19 @@ class AdvertController extends Controller
     public function indexAction(Request $request)
     {
         $adId = $request->query->get('adId');
+        $currentUserMobile = $request->query->get('mobile');
+        $currUser = $this->getUserByMobile($currentUserMobile);
+
         $advert = $this->getAdvertById($adId);
         $user = $this->getUserById($advert->getUserId());
 
         $info = [];
+        $info['curr_user']['id'] = $currUser->getId();
         $info['user']['name'] = $user->getName();
         $info['user']['lastname'] = $user->getLastname();
         $info['user']['email'] = $user->getEmail();
         $info['user']['mobile'] = $user->getMobile();
+        $info['product']['id'] = $advert->getId();
         $info['product']['title'] = $advert->getTitle();
         $info['product']['description'] = $advert->getDescription();
         $info['product']['price'] = $advert->getPrice();
@@ -55,6 +60,7 @@ class AdvertController extends Controller
         return $entityManager->getRepository('TradeYourGoodsInfrastructureBundle:Users')
             ->findOneBy(array('mobile' => $mobile));
     }
+
     public function createAction(Request $request) {
     
         $title = $request->request->get('title');

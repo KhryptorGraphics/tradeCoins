@@ -38,12 +38,14 @@
 			<img src="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/img/logo.png') ?>" alt="logo" height="auto" width="170px">
 		  </a>
         </div>
+          <div id="navbar" class="navbar-collapse collapse" >
         <div class="navbar-right">
-			<a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
 
-			<a class="btn btn-default" href="/new_advert?mobile=<?php echo $_GET['mobile'] ?>" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
+            <a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
+
+            <a class="btn btn-default" href="/new_advert?mobile=<?php echo $_GET['mobile'] ?>" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
         </div><!--/.navbar-right -->
-
+        </div>
       </div>
     </nav>
 
@@ -55,7 +57,7 @@
 
         <div class="media" style="margin-top: 50px;">
           <div class="media-body">
-            <a href="<?php echo "/advert?adId=" . $ad->getId();?>"><h4 class="media-heading"><?php echo $ad->getTitle();?> </h4></a>
+            <a href="<?php echo "/advert?adId=" . $ad->getId() . "&mobile=" . $_GET['mobile'];?>"><h4 class="media-heading"><?php echo $ad->getTitle();?> </h4></a>
             <?php echo $ad->getDescription();?>
           </div>
         </div>

@@ -36,6 +36,20 @@ trade_your_goods_new_advert:
     defaults:
         _controller: FrameworkBundle:Template:template
         template:    'TradeYourGoodsWebBundle:Advert:newadvert.html.php'
+
+trade_your_goods_price_guide_static:
+    path:     /price_guide
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    'TradeYourGoodsWebBundle:Advert:priceguide.html.php'
         
+trade_your_goods_price_guide:
+    path:     /price_guide/{price}
+    defaults:
+        _controller: TradeYourGoodsWebBundle:PriceGuide:show
 
 
+trade_your_goods_payment:
+    path:     /payment/user/{userId}/advert/{advId}
+    defaults:
+        _controller: TradeYourGoodsWebBundle:Payment:pay

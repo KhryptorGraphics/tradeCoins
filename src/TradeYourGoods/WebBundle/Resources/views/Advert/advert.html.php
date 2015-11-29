@@ -43,20 +43,26 @@
 			<img src="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/img/logo.png') ?>" alt="logo" height="auto" width="170px">
 		  </a>
         </div>
+          <div id="navbar" class="navbar-collapse collapse" >
         <div class="navbar-right">
 			<a class="btn btn-default" href="/profile" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
-			
-			<a class="btn btn-default" href="/new_advert" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
+		
+			<a class="btn btn-default" href="/new_advert?mobile=<?php echo $_GET['mobile'];?>" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
         </div><!--/.navbar-right -->
+</div>
+        </div>
+
       </div>
     </nav>
-	
+
     <div class="container" style="padding-top: 20px; margin-left:100px;">
         <h1 class="page-header"><?php echo $info['product']['title'];?></h1>
 	  <div class="row">
                 <!-- edit form column -->
                 <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal" role="form" method="POST"
+                          action="<?php echo "/payment/user/" . $info['curr_user']['id']
+                                  . "/advert/" . $info['product']['id'];?>">
 			<div class="form-group">
                             <label class="col-lg-3 control-label">Seller name:</label>
                             <div class="col-lg-8">
@@ -93,10 +99,22 @@
                                 <p style="font-size:20px"><?php echo $info['product']['price'];?></p>
                             </div>
 			</div>
+
 			<br/>
-			<button class="btn btn-lg btn-primary btn-block" type="submit" style = "background-color:green; width:200px; margin-left:450px;">BUY</button>
-		  </form>
+		  
+
+			<div class="form-group">
+			<button class="btn btn-lg btn-primary btn-block" type="submit" style = "background-color:green; width:200px;">BUY</button>
+                        </div>
+                        </form>
+		</div>
+			
+
 		</div>
 	  </div>
-	</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/js/bootstrap.min.js') ?>"></script>
 </body>
