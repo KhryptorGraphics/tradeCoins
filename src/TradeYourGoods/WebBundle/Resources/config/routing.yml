@@ -1,4 +1,4 @@
-trade_your_goods_web_homepage:
+trade_your_goods_index:
     path:     /
     defaults: { _controller: TradeYourGoodsWebBundle:Login:index }
 
@@ -6,3 +6,17 @@ trade_your_goods_login:
     path:     /login
     defaults: { _controller: TradeYourGoodsWebBundle:Login:check }
 
+trade_your_goods_register_new:
+    path:     /register_new
+    defaults: { _controller: TradeYourGoodsWebBundle:Register:new }
+
+trade_your_goods_register:
+    path:     /register
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    'TradeYourGoodsWebBundle:Login:register.html.php'
+
+trade_your_goods_homepage:
+    path:     /homepage
+    defaults:
+        _controller: TradeYourGoodsWebBundle:Homepage:index 

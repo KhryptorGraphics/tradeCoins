@@ -32,18 +32,23 @@
 
     <div class="container">
 
-      <form class="form-signin" action="/register" method="POST">
+      <form class="form-signin" action="/register_new" method="POST">
         <h2 class="form-signin-heading">Register</h2>
         <input type="hidden" name="mobile" value="<?php echo $mobile; ?>">
-        <label for="name" class="sr-only">Name</label>
-        <input type="text" id="name" class="form-control" placeholder="Name" required>
+        
+        <label for="name" class="sr-only" name="name">Name</label>
+        <input type="text" id="name" class="form-control" name = "name" placeholder="name" required>
+        
         <label for="surname" class="sr-only">Surname</label>
-        <input type="text" id="surname" class="form-control" placeholder="Surname" required>
+        <input type="text" id="surname" class="form-control" name = "surname" placeholder="surname" required>
+        
         <label for="email" class="sr-only">Email address (optional)</label>
-        <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" id="email" class="form-control" placeholder="Email address" name="email" required autofocus>
+        
         <label for="second_password" class="sr-only">Password</label>
-        <input type="second_password" id="second_password" class="form-control" placeholder="Type your password again" required>
-        <a class="btn btn-lg btn-primary btn-block" type="submit">Register now</a>
+        <input type="second_password" id="second_password" class="form-control" name = "password" placeholder="Type your password again" required>
+        
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Register Now"/>
       </form>
 
     </div>
