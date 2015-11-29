@@ -29,7 +29,7 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-top:opx;margin-bottom:20px;">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,14 +38,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="homepage.html">
+			<img src="logo.png" alt="logo" height="auto" width="170px">
+		  </a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <div class="navbar-right">
-            <a class="btn btn-default" href="login.html" role="button">Log in</a>
-            <a class="btn btn-default" href="register.html" role="button">Register</a>
-          </div>
-        </div><!--/.navbar-collapse -->
+        <div class="navbar-right">
+			<a class="btn btn-default" href="profile.html" role="button" style="margin-top:20px;margin-bottom:20px;margin-right:10px;">My Profile</a>
+			
+			<a class="btn btn-default" href="newad.html" role="button" style="margin-top:20px; margin-bottom:20px;">New Ad</a>
+        </div><!--/.navbar-right -->
       </div>
     </nav>
 
