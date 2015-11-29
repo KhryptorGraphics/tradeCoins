@@ -58,48 +58,53 @@
     <div class="container" style="padding-top: 20px; margin-left:100px;">
         <h1 class="page-header">Advert</h1>
 	  <div class="row">
-                <!-- edit form column -->
-                <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-                  <h3>Personal info</h3>
-                  <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                          <label class="col-lg-3 control-label">First name:</label>
-                          <div class="col-lg-3 control-label">
-                                <input class="form-control" value="First name" type="text" disabled>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-lg-3 control-label">Last name:</label>
-                          <div class="col-lg-3 control-label">
-                                <input class="form-control" value="Last name" type="text" disabled>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-lg-3 control-label">Email:</label>
-                          <div class="col-lg-3 control-label">
-                                <input class="form-control" value="Email" type="text" disabled>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-md-3 control-label">Telephone number:</label>
-                          <div class="col-md-3 control-label">
-                                <input class="form-control" value="Telephone number" type="text" disabled>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-md-3 control-label">Password:</label>
-                          <div class="col-md-3 control-label">
-                                <input class="form-control" value="Password" type="password" disabled>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-md-3 control-label">Credit:</label>
-                          <div class="col-md-3 control-label">
-                                <input class="form-control" value="Credit" type="text" disabled>
-                          </div>
-                        </div>
-                  </form>
-                </div>
+		
+		<!-- edit form column -->
+		<div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+		  <h3>Advert info</h3>
+		  <form class="form-horizontal" role="form">
+			<div class="form-group">
+			  <label class="col-lg-3 ">Seller name:</label>
+			  <div class="col-lg-3">
+                              <p>nome</p>
+			  </div>
+			</div>
+			<div class="form-group">
+			  <label class="col-lg-3">Seller last name:</label>
+			  <div class="col-lg-8">
+                            <p>cognome</p>
+			  </div>
+			</div>
+			<div class="form-group">
+			  <label class="col-lg-3">Seller Email:</label>
+			  <div class="col-lg-8">
+				<p>email</p>
+			  </div>
+			</div>
+			<div class="form-group">
+			  <label class="col-md-3">Seller Telephone number:</label>
+			  <div class="col-md-8">
+				<p>number</p>
+			  </div>
+			</div>
+			<div class="form-group">
+			  <label class="col-md-3">Product description</label>
+			  <div class="col-md-8">
+				<p>description</p>
+			  </div>
+			</div>
+			<div class="form-group">
+			  <label class="col-md-3" style="font-size:20px">Prize:</label>
+			  <div class="col-md-8">
+				<p style="font-size:20px">credit</p>
+			  </div>
+			</div>
+			<div class="form-group">
+			<button class="btn btn-lg btn-primary btn-block" type="submit" style = "background-color:green; width:200px;">BUY</button>
+		</div>
+			
+	  </form>
+		</div>
 	  </div>
 	</div>
 </body>
