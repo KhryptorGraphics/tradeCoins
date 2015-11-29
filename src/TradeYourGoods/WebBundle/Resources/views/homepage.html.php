@@ -34,8 +34,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="homepage.html">
-			<img src="logo.png" alt="logo" height="auto" width="170px">
+          <a class="navbar-brand" href="#">
+			<img src="<?php echo $view['assets']->getUrl('bundles/tradeyourgoodsweb/img/logo.png') ?>" alt="logo" height="auto" width="170px">
 		  </a>
         </div>
         <div class="navbar-right">
