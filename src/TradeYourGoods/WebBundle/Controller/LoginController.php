@@ -34,7 +34,7 @@ class LoginController extends Controller
         $correct = $this->checkPassword($user, $password);
 
         if ($correct) {
-            return $this->render('TradeYourGoodsWebBundle::homepage.html.php', array());
+            return $this->redirectToRoute('trade_your_goods_homepage', array('mobile' => $mobile));
         }
 
         } catch (\Exception $e) {
