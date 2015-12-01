@@ -1,4 +1,11 @@
-trade-your-goods
+tradeCoin
 ================
 
-A Symfony project created on November 28, 2015, 12:27 pm.
+A platform to trade your products using virtual money
+
+
+Deployed on heroku:
+  
+  http://tradecoin.herokuapp.com/
+  
+
